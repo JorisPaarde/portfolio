@@ -8,14 +8,16 @@
         width: 100%;
         background-color: coral;
         position: relative;
-        top:var(--nav-height);
+        top: $navHeight;
         scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
         scrollbar-width: none;
         &::-webkit-scrollbar{
             display: none;
         }
 
         > *{
+            width: 100vw;
             height: calc(100vh - $navHeight);
             scroll-snap-align: start;
         }

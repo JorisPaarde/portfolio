@@ -5,18 +5,20 @@ import Works from "./components/works/Works.tsx";
 import Testimonials from "./components/testimonials/Testimonials.tsx";
 import Contact from "./components/contact/Contact.tsx";
 import "./app.scss"
+import { useState } from "react";
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(true);
   return (
     <div className="app">
-    <Topbar></Topbar>
+    <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     <div className="sections">
-      <Intro></Intro>
-      <Portfolio></Portfolio>
-      <Works></Works>
-      <Testimonials></Testimonials>
-      <Contact></Contact>
+      <Intro/>
+      <Portfolio/>
+      <Works/>
+      <Testimonials/>
+      <Contact/>
     </div>
     </div>
   );

@@ -4,7 +4,7 @@ import styles from './Contact.module.scss';
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => (
-  <div className={styles.Contact}>
+  <div className={styles.Contact} id="contact">
     Contact Component
   </div>
 );
