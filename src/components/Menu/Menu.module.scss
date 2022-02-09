@@ -2,10 +2,10 @@
 
 .Menu {
     width: $menuWidth;
-    height: 100vh;
-    background-color: $mainColor;
+    height: calc(100vh - $navHeight);
+    background-color: white;
     position: fixed;
-    top: 0;
+    top: $navHeight;
     right: -$menuWidth;
     z-index: 2;
     display: flex;
@@ -16,6 +16,7 @@
 
     &.active{
         right: 0px;
+        background-color: $mainColor;
     }
 
     ul{

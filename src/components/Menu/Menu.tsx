@@ -10,19 +10,19 @@ const Menu: FC<MenuProps> = ({menuOpen, setMenuOpen}) => (
   <div className={[styles.Menu, (menuOpen && styles.active)].join(" ")}>
     <ul>
       <li>
-        <a href="#intro" onClick={()=>setMenuOpen(!menuOpen)}>Home</a>
+        <a href="#intro" onClick={()=>setMenuOpen(false)}>Home</a>
       </li> 
       <li>
-        <a href="#portfolio" onClick={()=>setMenuOpen(!menuOpen)}>Portfolio</a>
+        <a href="#portfolio" onClick={()=>setMenuOpen(false)}>Portfolio</a>
       </li>
       <li>
-        <a href="#works" onClick={()=>setMenuOpen(!menuOpen)}>Works</a>
+        <a href="#works" onClick={()=>setMenuOpen(false)}>Works</a>
       </li>
       <li>
-        <a href="#testimonials" onClick={()=>setMenuOpen(!menuOpen)}>Testimonials</a>
+        <a href="#testimonials" onClick={()=>setMenuOpen(false)}>Testimonials</a>
       </li> 
       <li>
-        <a href="#contact" onClick={()=>setMenuOpen(!menuOpen)}>Contact</a>
+        <a href="#contact" onClick={()=>setMenuOpen(false)}>Contact</a>
       </li>
     </ul>
   </div>
