@@ -3,7 +3,10 @@ import styles from './Topbar.module.scss';
 import Person from '@mui/icons-material/Person';
 import Mail from '@mui/icons-material/Mail';
 
-interface TopbarProps { }
+interface TopbarProps {
+  menuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+ }
 
 const Topbar: FC<TopbarProps> = ({menuOpen, setMenuOpen}) => (
   <div className={[styles.topbar, (menuOpen && styles.active)].join(" ")}>
