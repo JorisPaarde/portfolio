@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+:root{
+    --nav-height: 70px;
+}
+
+.Topbar {
+    width: 100%;
+    height: $navHeight;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}

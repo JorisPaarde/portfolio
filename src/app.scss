@@ -1,0 +1,24 @@
+@import "./global.scss";
+
+.app{
+    height: 100vh;
+
+    .sections{
+        height: calc(100vh - $navHeight);
+        width: 100%;
+        background-color: coral;
+        position: relative;
+        top:var(--nav-height);
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            height: calc(100vh - $navHeight);
+            scroll-snap-align: start;
+        }
+    }
+}
+
